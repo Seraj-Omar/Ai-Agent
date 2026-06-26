@@ -1,19 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
 # Virtual environment
 .venv/
 venv/
+env/
 
-# Python cache files
-__pycache__/
-*.py[cod]
-*$py.class
-
-# Environment variables
+# Environment variables (VERY important for your Gemini API key)
 .env
 
 # OS files
 .DS_Store
 Thumbs.db
 
-# IDE settings
+# Logs
+*.log
+
+# Test / cache
+.pytest_cache/
+.mypy_cache/
+
+# IDE
 .vscode/
 .idea/
+
+# Boot.dev / local artifacts (optional)
+*.out
