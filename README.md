@@ -43,3 +43,35 @@ The agent supports 4 core tools:
 
 ## 📂 Project Structure
 
+Ai-Agent-Python/
+│
+├── calculator/ # Simple calculator app (target project)
+├── functions/ # Tool implementations
+├── call_function.py # Function dispatcher + schemas
+├── main.py # Agent loop + LLM integration
+├── prompts.py # System prompt
+└── README.md
+
+
+---
+
+## ⚠️ Security Note
+
+This agent can:
+- read/write files
+- execute Python code
+
+It is restricted to a working directory, but **should NOT be exposed publicly without review or sandboxing**.
+
+---
+
+## 🛠 Requirements
+
+- Python 3.10+
+- google-genai
+- python-dotenv
+
+Install:
+
+```bash
+pip install -r requirements.txt
